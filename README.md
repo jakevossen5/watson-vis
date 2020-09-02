@@ -4,7 +4,9 @@ I have been using the [watson](http://tailordev.github.io/Watson/) to track my t
 
 ## Installation
 
-(todo, currently setting up homebrew tap)
+```bash
+brew install jakevossen5/taps/watson-vis
+```
 
 ## Usage
 
