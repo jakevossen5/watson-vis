@@ -1,0 +1,15 @@
+[package]
+name = "watson-vis"
+version = "0.1.0"
+authors = ["Jake Vossen <jake@vossen.dev>"]
+edition = "2018"
+description = "turns watson time data into a CLI pie chart"
+readme = "README.md"
+
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+serde_json = "1.0"
+serde = { version = "1.0", features = ["derive"] }
+piechart = "0.1"
