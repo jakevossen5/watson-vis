@@ -67,8 +67,6 @@ fn main() {
         }
     }
 
-    println!("last_index {}", last_index);
-
     // if there is only one remaining project, we can give it white
     if (last_index + 1) == report.projects.len() - 1 {
         let last_project = report.projects.last().unwrap();
@@ -91,8 +89,6 @@ fn main() {
             fill: char_loop.next().unwrap().clone(),
         });
     }
-
-    println!("data size {}", &data.len());
 
     Chart::new()
         .radius(12)
