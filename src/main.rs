@@ -56,8 +56,8 @@ fn main() {
     let mut data = Vec::new();
     let mut last_index = 0;
     for (index, color) in colors.iter().enumerate() {
-        last_index = index;
         if let Some(project) = report.projects.get(index) {
+            last_index = index;
             data.push(Data {
                 label: project.name.clone().into(),
                 value: project.time as f32,
@@ -66,6 +66,8 @@ fn main() {
             });
         }
     }
+
+    println!("last_index {}", last_index);
 
     // if there is only one remaining project, we can give it white
     if (last_index + 1) == report.projects.len() - 1 {
@@ -89,6 +91,8 @@ fn main() {
             fill: char_loop.next().unwrap().clone(),
         });
     }
+
+    println!("data size {}", &data.len());
 
     Chart::new()
         .radius(12)

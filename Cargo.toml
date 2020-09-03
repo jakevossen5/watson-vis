@@ -1,6 +1,6 @@
 [package]
 name = "watson-vis"
-version = "0.1.0"
+version = "0.1.1"
 authors = ["Jake Vossen <jake@vossen.dev>"]
 edition = "2018"
 description = "turns watson time data into a CLI pie chart"
